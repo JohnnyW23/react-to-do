@@ -1,4 +1,5 @@
 import React from "react";
+import REACTSVG from "../assets/react.svg"
 
 export default function PageTitle(){
   
@@ -6,7 +7,7 @@ export default function PageTitle(){
     <>
       <div className="logo float">
         <img
-          src="./src/assets/react.svg"
+          src={REACTSVG}
         />
       </div>
       <div className="titleText float">
