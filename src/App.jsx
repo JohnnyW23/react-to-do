@@ -18,12 +18,13 @@ function App() {
 
   const handleChange = (event) => {
     const task = event.target.value
-    setTaskValue(task)
+    if(task.length <=100)
+      setTaskValue(task)
   }
 
   const handleAdd = () => {
     let task = taskValue.trim()
-    if(task && task.length > 4 && task.length <= 100){
+    if(task && task.length <= 100){
       const newTask = {"key": uuidv4(), "task": task, "style": {'animation': 'fadeIn .7s ease-out .0s 1'}}
       const newTaskList = [...taskList, newTask]
       setTaskList(newTaskList);

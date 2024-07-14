@@ -15,6 +15,9 @@
   outline: 0;
 }
 .insertTask button {
+  position: relative;
+  top: 0px;
+  left: 0;
   width: 60px;
   height: 36px;
   padding: 8px;

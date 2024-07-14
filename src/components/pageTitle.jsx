@@ -11,8 +11,19 @@ export default function PageTitle(){
         />
       </div>
       <div className="titleText">
-        <h2>Your Personal To Do List!</h2>
-        <p>Made with React by <a href="https://github.com/JohnnyW23" target="_blank">JohnnyW23</a></p>
+        <h2>My Personal To Do List!</h2>
+        <p>
+          Made with React by <a
+            href="https://github.com/JohnnyW23"
+            target="_blank"
+          >
+            JohnnyW23
+            <img
+              src="https://avatars.githubusercontent.com/u/157778682?v=4"
+              className="author"
+            />
+          </a>
+        </p>
       </div>
     </>
   )

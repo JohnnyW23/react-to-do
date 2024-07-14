@@ -1,6 +1,5 @@
 ul {
   list-style-type: none;
-  word-break: break-all;
   padding: 5px 0;
 }
 .taskContent {
@@ -27,6 +26,7 @@ ul {
 }
 li p {
   width: calc(100% - 93px);
+  word-wrap: break-word;
 }
 .options, .status {
   float: right;
