@@ -6,7 +6,7 @@ export default function PageTitle(){
     <>
       <div className="logo float">
         <img
-          src="public/react.svg"
+          src="./src/assets/react.svg"
         />
       </div>
       <div className="titleText float">
