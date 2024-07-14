@@ -1,0 +1,23 @@
+:root{
+  --done: rgba(50, 255, 50, .8)
+}
+
+.fullDoneList .taskContent{
+  background: linear-gradient(330deg, rgba(50, 255, 50, .2), rgba(20, 20, 20, .3));
+  color: var(--done);
+}
+.status {
+  width: 70px;
+  text-align: center;
+}
+.status p {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 100%;
+  font-size: 18px;
+  color: var(--done);
+  border: 1px solid var(--done);
+  border-radius: 20px;
+  padding: 5px
+}

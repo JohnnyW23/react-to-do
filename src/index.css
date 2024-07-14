@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  background: radial-gradient(at bottom center, #099 -80%, #155,#000);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.float {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+#root {
+  padding: 0 2%;
+}
+.pad-spacing {
+  padding: 5px;
+  color: #eee;
+}
+.main-text {
+  padding: 5px 0 5px 5px;
+  color: rgba(240, 240, 240, 0.8);
+}
+.sub-text {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px 0 5px 5px;
+  color: rgba(240, 240, 240, 0.5);
+  padding-bottom: 10px;
+}
