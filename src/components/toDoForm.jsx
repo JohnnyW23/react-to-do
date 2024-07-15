@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ToDoForm({data, handleChange, handleAdd}){
+export default function ToDoForm({data, handleChange, handleKeyDown, handleAdd}){
   return (
     <div className='insertTask'>
       <input 
@@ -8,6 +8,7 @@ export default function ToDoForm({data, handleChange, handleAdd}){
         placeholder='Your task is...'
         value={data}
         onChange={handleChange}
+        onKeyDown={handleKeyDown}
       />
       <button
         onClick={handleAdd}

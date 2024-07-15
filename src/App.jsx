@@ -22,6 +22,12 @@ function App() {
       setTaskValue(task)
   }
 
+  const handleKeyDown = (event) => {
+    if(event.key === 'Enter'){
+      handleAdd()
+    }
+  }
+
   const handleAdd = () => {
     let task = taskValue.trim()
     if(task && task.length <= 100){
@@ -29,9 +35,6 @@ function App() {
       const newTaskList = [...taskList, newTask]
       setTaskList(newTaskList);
       setTaskValue("");
-    }
-    else{
-      setTaskValue("")
     }
   }
 
@@ -67,6 +70,7 @@ function App() {
           <ToDoForm
             data={taskValue}
             handleChange={(event) => handleChange(event)}
+            handleKeyDown={(event) => handleKeyDown(event)}
             handleAdd={() => handleAdd()}
           />
           <ToDoItem
